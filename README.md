@@ -1,5 +1,3 @@
-
-````markdown
 # Efficient Sentiment Classification for Twitter (ECE 684 Final Project)
 
 # Author: Bohao (Lexi) Yang (by95); Bingkun Wang (bw276); Yuzhao (Clair) Tan (yt221)
