@@ -1,8 +1,8 @@
 # Efficient Sentiment Classification for Twitter (ECE 684 Final Project)
 
-# Author: Bohao (Lexi) Yang (by95); Bingkun Wang (bw276); Yuzhao (Clair) Tan (yt221)
+### Author: Bohao (Lexi) Yang (by95); Bingkun Wang (bw276); Yuzhao (Clair) Tan (yt221)
 
-This repository contains our full workflow for the ECE 684 final project.  
+This repository contains the full workflow for the ECE 684 final project.  
 All model development and experiments were first trained and tested in a **Python Jupyter notebook**, and then organized into modular Python scripts for easier reuse and clearer structure.
 
 **Step 1 — NLP problem:**  
@@ -26,12 +26,10 @@ All models are trained and evaluated on the real TweetEval dataset with accuracy
 We discuss model quality vs. computation cost, interpretability limits, and class-imbalance behavior in the report.
 
 
-## Data (how to get it)
+## Data 
 
 We use the official HuggingFace split of TweetEval sentiment:  
 `cardiffnlp/tweet_eval`, configuration `sentiment`.
-
-You do **not** need to manually download files. The notebook loads the dataset automatically:
 
 ```python
 from datasets import load_dataset
@@ -163,8 +161,5 @@ pip install datasets transformers torch peft scikit-learn matplotlib pandas nump
 * Max sequence length: 128 tokens
 * WandB logging is configured (can be disabled by setting `WANDB_DISABLED=true`)
 * Original model training and testing were first completed in a **Python Jupyter notebook**, and the scripts here follow the same experimental setup.
+* Detailed methods, result, discussions and limitation will be covered in the report.
 
-```
-
-If you'd like, I can also help format this to match your GitHub styling preferences (indentation, badges, table of contents, etc.).
-```
